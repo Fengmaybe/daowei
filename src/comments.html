@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>到位-评论</title>
+  <meta name="keywords" content="到位，到家，上门服务，家政服务，上门维修，上门按摩，搬家，北京家政服务，上海家政服务">
+  <link rel="shortcut icon" href="http://www.daoway.cn/pcimages/favicon.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/dist.min.css">
+</head>
+<body>
+<div class="commentsWrap">
+  <!--头部-->
+  <header id="header">
+    <div class="header-wrap">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="./images/logo.png" alt="">
+        </div>
+        <div class="location">
+          <img src="./images/citypoint.png" alt="">
+          <span>深圳</span>
+          <span class="switch-city">切换城市</span>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a class="login" href="./index.html">商家登录</a></li>
+            <li><a href="./index.html">关于我们</a></li>
+            <li><a href="./index.html">商家入驻</a></li>
+            <li><a class="on" href="./facilitator.html">服务商</a></li>
+            <li><a href="./index.html">到位APP</a></li>
+            <li><a href="./index.html">首页</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--加强党对社会控制就叫改革，习-->
+  <!--服务项目-->
+  <div class="target-comment">
+    <script id="server-project" type="text/html">
+      <div class="target-comment-warp">
+        <div class="target-comment-left">
+          <div class="comment-left-info">
+            <span class="comment-left-title">{{name}}</span>
+            <span class="business-time">营业时间：
+              <span>{{seredate}}</span>
+            </span>
+            <span class="order-time">最近可预约时间：
+              <span>{{servedatalately}}</span>
+            </span>
+          </div>
+        </div>
+        <div class="target-comment-right">
+          <div class="comment-inner">
+        <span class="comment-right-item">
+          <span class="count">{{orderCount}}</span>
+          <span>成功接单</span>
+        </span>
+            <span class="split">|</span>
+            <span class="comment-right-item">
+          <span class="count">{{accept}}</span>
+          <span>接单率</span>
+        </span>
+            <span class="split">|</span>
+            <span class="comment-right-item">
+           <span class="count">{{praise}}</span>
+           <span>好评率</span>
+        </span>
+          </div>
+        </div>
+      </div>
+    </script>
+  </div>
+  <div class="comment-categroy">
+    <div class="comment-categroy-wrap">
+      <a class='active' href="javascript:;">服务项目</a>
+      <a href="javascript:;">商家简介</a>
+      <a href="#comment-list">用户评论</a>
+    </div>
+  </div>
+
+  <!--主要服务项目描述区-->
+  <div class="serverProject">
+    <h2><span>服务项目</span></h2>
+    <div class="content">
+      <ul class="serverCenter">
+        <script id="server-detail" type="text/html">
+        <li>
+          <a href="javascript:;" target="_blank">
+            <div class="single-server">
+              <img class="pic" src={{imgUrl}}>
+              <span class="single-server-info">
+                <span class="server-type">{{title}}</span>
+                <span class="desc">{{servedes}}</span>
+                <span class="price">{{price}}<em>元/次</em></span>
+              </span>
+              <div class="sale"><p>已售{{soldCount}}</p></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" target="_blank">
+            <div class="single-server">
+              <img class="pic" src={{imgUrl}}>
+              <span class="single-server-info">
+                <span class="server-type">{{title}}</span>
+                <span class="desc">{{servedes}}</span>
+                <span class="price">{{price}}<em>元/次</em></span>
+              </span>
+              <div class="sale"><p>已售{{soldCount}}</p></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" target="_blank">
+            <div class="single-server">
+              <img class="pic" src={{imgUrl}}>
+              <span class="single-server-info">
+                <span class="server-type">{{title}}</span>
+                <span class="desc">{{servedes}}</span>
+                <span class="price">{{price}}<em>元/次</em></span>
+              </span>
+              <div class="sale"><p>已售{{soldCount}}</p></div>
+            </div>
+          </a>
+        </li>
+        </script>
+      </ul>
+      <ul class="shopCenter">
+        <li class="app">
+          <img src="./images/fuwushang2_07.jpg" alt="">
+          <img class='code' src="./images/1.png" alt="">
+        </li>
+        <li class="app">
+          <img src="./images/two.jpg" alt="">
+          <img class='code' src="./images/2.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+    <div class="more">
+      <div class="more-server">
+      <span class="more-content">
+        <span>查看更多商家</span>
+          <img src="./images/down.jpg" alt="">
+      </span>
+      </div>
+    </div>
+  </div>
+
+  <!--公司简介专区-->
+  <div id='comment-list' class="company-wrap">
+  <div class="company-description">
+    <script id="company" type="text/html">
+    <h3><span>商家简介</span></h3>
+    <div class="company">{{company}}<img src="./images/renzheng.jpg" alt=""></div>
+    <div class="company-profile">{{business}}</div>
+    </script>
+  </div>
+  </div>
+
+  <!--用户评价-->
+  <div class="user-comments">
+    <div class="commentsList">
+    <h3><span>用户评价</span><b>&nbsp;&nbsp;(1931条评论)</b></h3>
+      <!--评论内容区-->
+    <ul class="commentsUl">
+      <script id="commentList" type="text/html">
+      {{each data as value i}}
+      <li class="item">
+        <span class='touxiang'>
+          <img  src={{value.iconUrl}} alt="userIcon">
+        </span>
+        <span class="comment-item-text">
+            <span class="comment-author">{{value.nick}}</span>
+            <span class="comment-time">
+            <span class="star">
+             <!--star-->
+              {{if value.star === 5}}
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+              {{else if value.star == 4}}
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+              {{else if value.star == 3}}
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+              {{else if value.star == 2}}
+                <img src='images/red_star.png' alt="">
+                <img src='images/red_star.png' alt="">
+               {{else if value.star == 1}}
+              <img src='images/red_star.png' alt="">
+              {{/if}}
+            </span>
+            <span class="time">{{value.createtime}}</span>
+            </span>
+           <span class="comment-content">{{value.comment}}</span>
+            <span class="comment-address">
+              <img src="./images/position.jpg" alt="">
+              {{value.city}} {{value.area}}
+            </span>
+           <span class="reply">
+             <span class="shop-reply">商家回复:</span>
+             <span class="reply-content">{{value.comment}}</span>
+           </span>
+
+         </span>
+      </li>
+      {{/each}}
+    </script>
+    </ul>
+      <!--分页器-->
+      <div class="page-list">
+        <div class="innerPage">
+          <span class="pre">上一页</span>
+          <div class="pageList">
+          <script id="pageList" type="text/html">
+            {{each dataArr as value i}}
+            <a href="javascript:;" class="paging-item">{{i+1}}</a>
+            {{/each}}
+          </script>
+          </div>
+          <span class="next">下一页</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--footer区域-->
+  <footer class="footer">
+    <div class="server-info">
+      <h2>
+        到位<span>服务</span>保障
+      </h2>
+      <p>到位平台担保交易安全，交易未成功100%退款</p>
+      <div class="three-server">
+        <div class="inner-server">
+        <span>
+          <img src="./images/anquan.jpg" alt="">
+          <span>优选服务</span>
+        </span>
+          <span>
+          <img src="./images/anquan.jpg" alt="">
+          <span>全程保障</span>
+        </span>
+          <span>
+          <img src="./images/anquan.jpg" alt="">
+          <span>安全无忧</span>
+        </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hot-city">
+      <script id="cityList" type="text/html">
+        <dl>
+          <dt>热门城市</dt>
+          <dd class="footer-city-list">
+            {{each data as city}}
+            <a href="javascript:;">{{city}}</a>
+            {{/each}}
+          </dd>
+        </dl>
+      </script>
+    </div>
+    <div class="cooperative server">
+      <div class="company-info">©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</div>
+    </div>
+  </footer>
+
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/comments.js"></script>
+
+</body>
+</html>

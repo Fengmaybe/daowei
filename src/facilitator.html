@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>到位-服务商</title>
+  <meta name="keywords" content="到位，到家，上门服务，家政服务，上门维修，上门按摩，搬家，北京家政服务，上海家政服务">
+  <link rel="shortcut icon" href="http://www.daoway.cn/pcimages/favicon.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/dist.min.css">
+</head>
+<body>
+<div class="facilitatorWrap">
+  <!--头部-->
+  <header id="header">
+    <div class="header-wrap">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="./images/logo.png" alt="">
+        </div>
+        <div class="location">
+          <img src="./images/citypoint.png" alt="">
+          <span>深圳</span>
+          <span class="switch-city">切换城市</span>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a class="login" href="./index.html">商家登录</a></li>
+            <li><a href="./index.html">关于我们</a></li>
+            <li><a href="./index.html">商家入驻</a></li>
+            <li><a class="on" href="./facilitator.html">服务商</a></li>
+            <li><a href="./index.html">到位APP</a></li>
+            <li><a href="./index.html">首页</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--主要内容区-->
+  <div class="facilitatorContent">
+    <h2>服务商</h2>
+    <div class="content">
+    <ul class="serverCenter">
+      <script id="serverList" type="text/html">
+      {{each data as value i}}
+      <li>
+        <a href="./comments.html">
+        <img src={{value.imgUrl}}>
+        <p class="title">{{value.title}}</p>
+        <p class="orderCount">已接单{{value.orderCount}}单<span class="positiveRate">好评{{value.positiveRate}}</span></p>
+        </a>
+      </li>
+      {{/each}}
+      </script>
+    </ul>
+    <ul class="shopCenter">
+      <li>
+        <img src="./images/tuijianfuwushang_03.jpg">
+      </li>
+      <li class="app">
+        <img src="./images/two.jpg" alt="">
+        <img class='code' src="./images/2.jpg" alt="">
+      </li>
+    </ul>
+    </div>
+    <div class="more">
+      <div class="more-server">
+      <span class="more-content">
+        <span>查看更多商家</span>
+          <img src="./images/down.jpg" alt="">
+      </span>
+      </div>
+    </div>
+  </div>
+
+  <!--footer区域-->
+  <footer class="footer">
+    <div class="server-info">
+      <h2>
+        到位<span>服务</span>保障
+      </h2>
+      <p>到位平台担保交易安全，交易未成功100%退款</p>
+      <div class="three-server">
+        <div class="inner-server">
+        <span>
+          <img src="./images/anquan.jpg" alt="">
+          <span>优选服务</span>
+        </span>
+          <span>
+          <img src="./images/anquan.jpg" alt="">
+          <span>全程保障</span>
+        </span>
+          <span>
+          <img src="./images/anquan.jpg" alt="">
+          <span>安全无忧</span>
+        </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hot-city">
+      <script id="cityList" type="text/html">
+        <dl>
+          <dt>热门城市</dt>
+          <dd class="footer-city-list">
+            {{each data as city}}
+            <a href="javascript:;">{{city}}</a>
+            {{/each}}
+          </dd>
+        </dl>
+      </script>
+    </div>
+    <div class="cooperative server">
+      <div class="company-info">©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</div>
+    </div>
+  </footer>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/facilitator.js"></script>
+
+</body>
+</html>
